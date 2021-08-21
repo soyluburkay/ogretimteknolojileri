@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="content/css/style.css"/>
+    <link rel="stylesheet" href="content/css/style2.css"/>
+    <script src="https://kit.fontawesome.com/511e3fd6cb.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container" id="t1">
+      <div class="container" id="t2">
+        <div class="container" id="t3">
+          <div class="container" id="t4">
+            <section>
+              <ul>
+                <a href="#t1"><li class="icon fa fa-home" id="page1"></li></a>
+                <a href="#t2"><li class="icon fa fa-book" id="page2"></li></a>
+                <a href="#t3"><li class="icon fa fa-pencil-alt" id="page3"></li></a>
+                <a href="#t4"><li class="icon fa fa-info-circle" id="page4"></li></a>
+              </ul>
+              <div class="page" id="p1">
+                <li class="icon fa fa-home">
+                  <span class="title">Home</span>
+                  <div class="content">
+                    <p>Welcome to interactive English learning experience!<br>In this website, you'll first learn about <b>Colors, Seasons & Months, Numbers</b>. 📕<br>Then you'll be able to practice your skills at the practice section. ✏️<br>Note: In the practice section, please submit all your answers in <u>lowercase</u>.</p>
+                  </div>
+                </li>
+              </div>
+              <div class="page" id="p2">
+                <li class="icon fa fa-book">
+                  <span class="title">Study & Learn</span>
+                  <div class="content">
+                    <div class="sol panel">
+                      <h2>Colors</h2>
+                      <div class="inner">
+                        <q class="name">Click & Listen</q>
+                        <p class="color red" onclick="red.play()">Red</p>
+                        <p class="color orange" onclick="orange.play()">Orange</p>
+                        <p class="color yellow" onclick="yellow.play()">Yellow</p>
+                        <p class="color green" onclick="green.play()">Green</p>
+                        <p class="color blue" onclick="blue.play()">Blue</p>
+                        <p class="color indigo" onclick="indigo.play()">Indigo</p>
+                        <p class="color violet" onclick="violet.play()">Violet</p>
+                      </div>
+                    </div>
+                    <div class="orta panel">
+                      <h2>Seasons & Months</h2>
+                      <div class="languages">
+                        <div class="language">
+                          <div class="name">Seasons</div>
+                          <div class="explanation">
+                            <i class=" fas fa-snowflake" onclick="winter.play()"> Winter</i>
+                            <i class=" fas fa-seedling" onclick="spring.play()"> Spring</i>
+                            <i class=" fas fa-sun" onclick="summer.play()"> Summer</i>
+                            <i class=" fas fa-umbrella" onclick="autumn.play()"> Autumn</i>
+                          </div>
+                        </div>
+                        <div class="language">
+                          <div class="name">Months</div>
+                          <div class="explanation">
+                            <div><i class="fas fa-snowflake" onclick="january.play()"><br>January</i>
+                              <i class="fas fa-snowflake" onclick="february.play()"><br>February</i>
+                              <i class="fas fa-seedling" onclick="march.play()"><br>March</i></div>
+                            <div><i class="fas fa-seedling" onclick="april.play()"><br>April</i>
+                              <i class="fas fa-seedling" onclick="may.play()"><br>May</i>
+                              <i class="fas fa-sun" onclick="june.play()"><br>June</i></div>
+                            <div><i class="fas fa-sun" onclick="july.play()"><br>July</i>
+                              <i class="fas fa-sun" onclick="august.play()"><br>August</i>
+                              <i class="fas fa-umbrella" onclick="september.play()"><br>September</i></div>
+                            <div><i class="fas fa-umbrella" onclick="october.play()"><br>October</i>
+                              <i class="fas fa-umbrella" onclick="november.play()"><br>November</i>
+                              <i class="fas fa-snowflake" onclick="december.play()"><br>December</i></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sag panel">
+                      <h2>Numbers</h2>
+                        
+                      <div class="numbers-container">
+                      <div class="numbers">
+                        <div class="number" onclick="one.play()">1<br>one</div>
+                        <div class="number" onclick="two.play()">2<br>two</div>
+                        <div class="number" onclick="three.play()">3<br>three</div>
+                      </div>
+                      <div class="numbers">
+                        <div class="number" onclick="four.play()">4<br>four</div>
+                        <div class="number" onclick="five.play()">5<br>five</div>
+                        <div class="number" onclick="six.play()">6<br>six</div>
+                      </div>
+                      <div class="numbers">
+                        <div class="number" onclick="seven.play()">7<br>seven</div>
+                        <div class="number" onclick="eight.play()">8<br>eight</div>
+                        <div class="number" onclick="nine.play()">9<br>nine</div>
+                      </div>
+                      <div class="numbers">
+                        <div class="number" onclick="zero.play()">0<br>zero</div>
+                      </div>
+                    </div>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </div>
+              <div class="page" id="p3">
+                <li class="icon fa fa-pencil-alt">
+                  <span class="title">Practice</span>
+                  <div class="content">
+                      <div class="score-container" id="scoreContainer">
+                        <p>Score</p>
+                        <span id="score">0</span>/7
+                    </div>
+                    <div id="question">
+                  <img id="imgSrc" src="content/img/sunflower.jpg" alt="Sunflowers">
+                  <p id="credit" class="credit">Photo by <a href='https://unsplash.com/@mcoswalt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Maria Oswalt</a> on <a href='https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>  
+                  <p id="questionText">The sky is <input maxlength="10" type="text" id="skyInput"> and the flowers are <input maxlength="10" type="text" id="flowerInput">.</p>
+                  <button type="button" class="continue-btn" id="continueBtn">Continue: Seasons & Months</button>
+                </div>
+                </div>
+                </li>
+              </div>
+              <div class="page" id="p4">
+                <li class="icon fas fa-info-circle">
+                  <span class="title">Info</span>
+                  <div class="content">
+                    <img src="content/img/burkaysoylu.jpg" alt="Burkay Soylu" />
+                    <p>
+                      <b>Burkay Soylu</b>
+                      <p>27632285544<br>Medeniyet University<br>English Language Teaching</p>
+                    </p>
+<br>  
+                    <p>This project was made for Öğretim Teknolojileri class,<br>during Summer School of Uludağ University.<br>21/08/2021<br><br>
+                    <b>Teacher:</b> Prof. Dr. Yunus Alyaz</p>
+                    <div>
+                      <br><br>
+                      <p><b>Credits:</b></p>
+                    <p>- Images from <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+                    <p>- Icons from <a href="https://fontawesome.com/" target="_blank">Font Awesome</a></p>
+                    <p>- Sound files from <a href="https://forvo.com/" target="_blank">Forvo</a></p></div>
+                  </div>
+                </li>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="content/js/app.js"></script>
+    </body>
+</html>
