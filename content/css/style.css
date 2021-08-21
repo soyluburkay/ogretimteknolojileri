@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  transition: all 500ms ease-out;
+  -webkit-transition: all 500ms ease-out;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body,
+section,
+.page {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  transition: all 1s cubic-bezier(0.5, -0.005, 0.2, 1) !important;
+  -webkit-transition: all 1s cubic-bezier(0.5, -0.005, 0.2, 1) !important;
+  color: #fff;
+  background: #264653;
+  overflow: hidden;
+}
+
+section {
+  width: 400%;
+}
+
+.page {
+  position: absolute;
+}
+
+#p1 {
+  left: 0;
+}
+
+#p2 {
+  left: 100%;
+  background: #2a9d8f;
+}
+
+#p3 {
+  left: 200%;
+  background: #ddaf39;
+}
+
+#p4 {
+  left: 300%;
+  background: #f4a261;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1;
+}
+#t1:target .page#p1 {
+  transform: translateX(0);
+}
+#t2:target .page#p2 {
+  transform: translateX(-90%);
+}
+#t3:target .page#p3 {
+  transform: translateX(-190%);
+}
+#t4:target .page#p4 {
+  transform: translateX(-290%);
+}
+
+#t2:target .page#p1,
+#t3:target .page#p1,
+#t4:target .page#p1 {
+  background: black;
+}
+
+#t2:target .page#p1 .icon,
+#t3:target .page#p1 .icon,
+#t4:target .page#p1 .icon {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.icon {
+  color: #fff;
+  font-size: 32px;
+  display: block;
+}
+
+ul .icon:hover {
+  color: #fe7f2d;
+}
+
+#p1 .icon .title {
+  margin-bottom: 20px;
+}
+
+#t2:target ul .icon,
+#t3:target ul .icon,
+#t4:target ul .icon {
+  transform: scale(0.7);
+  transition-delay: 0.25s;
+}
+
+#t2:target #page2 {
+  transform: scale(1.2) !important;
+}
+
+#t3:target #page3 {
+  transform: scale(1.2) !important;
+}
+
+#t4:target #page4 {
+  transform: scale(1.2) !important;
+}
+
+ul {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 280px;
+  width: 10%;
+  padding: 0;
+  text-align: center;
+}
+
+ul li {
+  margin: 30px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title,
+.content {
+  display: block;
+}
+
+.title {
+  font-size: 28px;
+}
+
+.content {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
+}
+
+#p1 .content p {
+  line-height: 3rem;
+}
+
+#p2 .content {
+  display: flex;
+}
+
+#p3 .content img {
+  height: 400px;
+  border-radius: 30px;
+}
+
+#p3 .content input {
+  width: 100px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 3px 10px;
+}
+
+#p4 .content img {
+  width: 180px;
+  border-radius: 50%;
+}
+
+input:disabled {
+  color: black;
+  font-weight: bold;
+}
+
+.content p {
+  margin: 0;
+}
+
+.content a {
+  color: #ff2b06;
+  transition: all 250ms ease-out;
+}
+
+.content a:hover {
+  color: #fff;
+}
+
+.page .icon {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  left: 0;
+  bottom: 0;
+  width: 70%;
+  height: 90%;
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+  transform: translateX(360%);
+  line-height: 1.3;
+}
+
+.page#p1 .icon {
+  top: 0;
+  right: 0;
+  height: 220px;
+}
+
+.page#p1 .icon {
+  transform: translateX(0) !important;
+}
+
+#t2:target .page#p2 .icon {
+  transform: translateX(0) !important;
+  transition-delay: 1s;
+}
+
+#t3:target .page#p3 .icon {
+  transform: translateX(0) !important;
+  transition-delay: 1s;
+}
+
+#t4:target .page#p4 .icon {
+  transform: translateX(0) !important;
+  transition-delay: 1s;
+}
+
+.credit {
+  font-size: 10px;
+}
+
+#questionText {
+  margin-top: 20px;
+}
+
+.continue-btn {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  background: #76c24d !important;
+  border: none;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  transform: translateY(300px);
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.continue-btn:hover {
+  background: #5a9938;
+}
+
+.score-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 18px;
+  background: rgb(10, 117, 0);
+  padding: 10px;
+  border-radius: 50%;
+}

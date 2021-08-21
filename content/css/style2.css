@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merienda:wght@400;700&family=Satisfy&display=swap");
+
+.panel {
+  width: 33%;
+  transition: 500ms ease-in-out;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sol {
+  background-color: teal;
+  border-radius: 30px 0 0 30px;
+}
+.orta {
+  background-color: tomato;
+}
+.sag {
+  background-color: yellowgreen;
+  border-radius: 0 30px 30px 0;
+}
+
+.sol:hover h2 {
+  opacity: 0;
+}
+.orta:hover h2 {
+  opacity: 0;
+}
+.sag:hover h2 {
+  opacity: 0;
+}
+
+.panel:hover {
+  width: 60%;
+}
+
+h2 {
+  position: absolute;
+  width: 100%;
+  font-family: "Merienda", cursive;
+  font-size: 2rem;
+  line-height: 50px;
+}
+
+.inner {
+  opacity: 0;
+  transition: 800ms ease-in-out;
+}
+
+.panel:hover .inner {
+  opacity: 1;
+}
+
+.inner .color {
+  opacity: 0;
+  width: 150px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 20px;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+}
+
+.inner .red {
+  background-color: red;
+  color: red;
+}
+.inner .orange {
+  background-color: orange;
+  color: orange;
+}
+.inner .yellow {
+  background-color: yellow;
+  color: yellow;
+}
+.inner .green {
+  background-color: green;
+  color: green;
+}
+.inner .blue {
+  background-color: blue;
+  color: blue;
+}
+.inner .indigo {
+  background-color: indigo;
+  color: indigo;
+}
+.inner .violet {
+  background-color: violet;
+  color: violet;
+}
+
+.sol.panel {
+  padding-top: 20px;
+}
+
+.orta .language:nth-of-type(2) .fas {
+  width: 100%;
+}
+
+.explanation i {
+  cursor: pointer;
+}
+
+.inner p:hover {
+  color: white;
+  text-shadow: 1px 1px 10px black;
+}
+
+.inner p:nth-of-type(2n) {
+  transform: translateX(-100px);
+}
+
+.inner p:nth-of-type(2n-1) {
+  transform: translateX(200px);
+}
+
+.panel:hover .inner p:nth-of-type(2n) {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.panel:hover .inner p:nth-of-type(2n-1) {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+/* ORTA */
+
+.languages {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.language {
+  border: 2px solid black;
+  border-radius: 40px;
+  padding: 1rem;
+  width: 80%;
+  opacity: 0;
+  transition: 500ms ease-in-out;
+  background: rgb(255, 210, 210);
+  background: radial-gradient(
+    circle,
+    rgba(255, 160, 160, 0.555) 35%,
+    #ff6347b0 100%
+  );
+}
+
+.language:hover {
+  background: radial-gradient(
+    circle,
+    rgba(247, 177, 177, 0.555) 35%,
+    #ff8e7ab0 100%
+  );
+}
+
+.panel:hover .language {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.language:nth-of-type(1) {
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  font-family: "Merienda", cursive;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.explanation {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+.explanation i {
+  margin: 0.1rem;
+  padding: 10px 20px;
+  background: rgb(59, 16, 0);
+  border-radius: 20px;
+}
+
+.fa-snowflake {
+  color: white;
+}
+.fa-seedling {
+  color: greenyellow;
+}
+.fa-sun {
+  color: yellow;
+}
+.fa-umbrella {
+  color: lightblue;
+}
+
+.explanation div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example {
+  color: rgb(1, 28, 44);
+  font-weight: bold;
+  font-family: "Merienda", cursive;
+  font-size: 1.2rem;
+}
+
+.sentence {
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.sentence span {
+  font-weight: bold;
+  color: rgb(0, 66, 66);
+}
+
+.sentence div {
+  font-size: 0.7rem;
+  color: rgb(16, 36, 16);
+}
+
+.languages div {
+  width: 23vw;
+}
+
+/* SAG */
+
+.sag {
+  overflow: hidden;
+}
+
+.panel:hover .numbers-container {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.definition div:nth-of-type(1) {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed black;
+}
+.definition div:nth-of-type(2) {
+  margin-top: 1.5rem;
+}
+
+.numbers-container {
+  opacity: 0;
+  transform: translate(300%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.numbers {
+  display: flex;
+  padding: 10px;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+  background: rgb(225, 234, 236);
+  color: #333;
+  border-radius: 20px;
+  cursor: pointer;
+}
